@@ -35,6 +35,42 @@
             <param name="cityID"></param>
             <returns></returns>
         </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.AddCityWithQueryString(CitiesManager.WebAPI.Models.City)">
+            <summary>
+            
+            </summary>
+            <param name="city"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.AddCityWithFormData(CitiesManager.WebAPI.Models.City)">
+            <summary>
+            
+            </summary>
+            <param name="city"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.PutCity(System.Guid,CitiesManager.WebAPI.Models.City)">
+            <summary>
+            
+            </summary>
+            <param name="cityID"></param>
+            <param name="city"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.PostCity(CitiesManager.WebAPI.Models.City)">
+            <summary>
+            
+            </summary>
+            <param name="city"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.DeleteCity(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="cityID"></param>
+            <returns></returns>
+        </member>
         <member name="T:CitiesManager.WebAPI.Controllers.v2.CitiesController">
             <summary>
             
@@ -52,6 +88,33 @@
             from 'cities' table
             </summary>
             <returns>Returns all of the Cities present in the database</returns>
+        </member>
+        <member name="T:CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext})">
+            <summary>
+            
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="M:CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext.Cities">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="modelBuilder"></param>
         </member>
         <member name="T:CitiesManager.WebAPI.Migrations.Initial">
             <inheritdoc />
@@ -88,6 +151,21 @@
         </member>
         <member name="M:CitiesManager.WebAPI.Migrations.MissspellErrorMessage.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
+        </member>
+        <member name="T:CitiesManager.WebAPI.Models.City">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CitiesManager.WebAPI.Models.City.CityID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CitiesManager.WebAPI.Models.City.CityName">
+            <summary>
+            
+            </summary>
         </member>
     </members>
 </doc>

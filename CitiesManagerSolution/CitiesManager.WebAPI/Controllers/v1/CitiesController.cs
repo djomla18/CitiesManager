@@ -39,7 +39,7 @@ namespace CitiesManager.WebAPI.Controllers.v1
         {
             return await _context.Cities
                 .OrderByDescending(city => city.CityName)
-                .ToListAsync(); ;
+                .ToListAsync();
         }
 
         // GET: api/Cities/5
@@ -62,6 +62,11 @@ namespace CitiesManager.WebAPI.Controllers.v1
             return city; // Ok(city) - OkObjectResult(city)
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="city"></param>
+        /// <returns></returns>
         [HttpPost("queryString")]
         public async Task<ActionResult<City>> AddCityWithQueryString([FromQuery] City city)
         {
@@ -79,7 +84,11 @@ namespace CitiesManager.WebAPI.Controllers.v1
             return CreatedAtAction("GetCity", new { cityID = city.CityID }, city);
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="city"></param>
+        /// <returns></returns>
         [HttpPost("formData")]
         public async Task<ActionResult<City>> AddCityWithFormData([FromForm] City city)
         {
@@ -98,6 +107,12 @@ namespace CitiesManager.WebAPI.Controllers.v1
             return CreatedAtAction("GetCity", new { cityID = city.CityID }, city);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="cityID"></param>
+        /// <param name="city"></param>
+        /// <returns></returns>
         // PUT: api/Cities/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{cityID}")]
@@ -139,6 +154,11 @@ namespace CitiesManager.WebAPI.Controllers.v1
             return NoContent();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="city"></param>
+        /// <returns></returns>
         // POST: api/Cities
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
@@ -152,6 +172,11 @@ namespace CitiesManager.WebAPI.Controllers.v1
             // api/Cities/{cityID}
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="cityID"></param>
+        /// <returns></returns>
         // DELETE: api/Cities/5
         [HttpDelete("{cityID}")]
         public async Task<IActionResult> DeleteCity(Guid cityID)

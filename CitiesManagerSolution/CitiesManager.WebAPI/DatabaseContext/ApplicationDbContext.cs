@@ -3,18 +3,35 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CitiesManager.WebAPI.DatabaseContext
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class ApplicationDbContext : DbContext
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="options"></param>
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public ApplicationDbContext()
         {
             
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual DbSet<City> Cities { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

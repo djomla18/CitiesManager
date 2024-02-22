@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using CitiesManager.WebAPI.DatabaseContext;
-using CitiesManager.WebAPI.Models;
+using CitiesManager.Core.Entities;
+using CitiesManager.Infrastructure.DatabaseContext;
 
 namespace CitiesManager.WebAPI.Controllers.v2
 {

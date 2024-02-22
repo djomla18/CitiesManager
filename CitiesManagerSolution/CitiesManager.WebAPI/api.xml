@@ -14,7 +14,7 @@
             
             </summary>
         </member>
-        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.#ctor(CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext)">
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.#ctor(CitiesManager.Infrastructure.DatabaseContext.ApplicationDbContext)">
             <summary>
             
             </summary>
@@ -35,21 +35,21 @@
             <param name="cityID"></param>
             <returns></returns>
         </member>
-        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.AddCityWithQueryString(CitiesManager.WebAPI.Models.City)">
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.AddCityWithQueryString(CitiesManager.Core.Entities.City)">
             <summary>
             
             </summary>
             <param name="city"></param>
             <returns></returns>
         </member>
-        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.AddCityWithFormData(CitiesManager.WebAPI.Models.City)">
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.AddCityWithFormData(CitiesManager.Core.Entities.City)">
             <summary>
             
             </summary>
             <param name="city"></param>
             <returns></returns>
         </member>
-        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.PutCity(System.Guid,CitiesManager.WebAPI.Models.City)">
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.PutCity(System.Guid,CitiesManager.Core.Entities.City)">
             <summary>
             
             </summary>
@@ -57,7 +57,7 @@
             <param name="city"></param>
             <returns></returns>
         </member>
-        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.PostCity(CitiesManager.WebAPI.Models.City)">
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.PostCity(CitiesManager.Core.Entities.City)">
             <summary>
             
             </summary>
@@ -76,7 +76,7 @@
             
             </summary>
         </member>
-        <member name="M:CitiesManager.WebAPI.Controllers.v2.CitiesController.#ctor(CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext)">
+        <member name="M:CitiesManager.WebAPI.Controllers.v2.CitiesController.#ctor(CitiesManager.Infrastructure.DatabaseContext.ApplicationDbContext)">
             <summary>
             
             </summary>
@@ -88,84 +88,6 @@
             from 'cities' table
             </summary>
             <returns>Returns all of the Cities present in the database</returns>
-        </member>
-        <member name="T:CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext})">
-            <summary>
-            
-            </summary>
-            <param name="options"></param>
-        </member>
-        <member name="M:CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext.#ctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext.Cities">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:CitiesManager.WebAPI.DatabaseContext.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <summary>
-            
-            </summary>
-            <param name="modelBuilder"></param>
-        </member>
-        <member name="T:CitiesManager.WebAPI.Migrations.Initial">
-            <inheritdoc />
-        </member>
-        <member name="M:CitiesManager.WebAPI.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:CitiesManager.WebAPI.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:CitiesManager.WebAPI.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:CitiesManager.WebAPI.Migrations.CityNameRequired">
-            <inheritdoc />
-        </member>
-        <member name="M:CitiesManager.WebAPI.Migrations.CityNameRequired.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:CitiesManager.WebAPI.Migrations.CityNameRequired.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:CitiesManager.WebAPI.Migrations.CityNameRequired.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:CitiesManager.WebAPI.Migrations.MissspellErrorMessage">
-            <inheritdoc />
-        </member>
-        <member name="M:CitiesManager.WebAPI.Migrations.MissspellErrorMessage.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:CitiesManager.WebAPI.Migrations.MissspellErrorMessage.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:CitiesManager.WebAPI.Migrations.MissspellErrorMessage.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:CitiesManager.WebAPI.Models.City">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:CitiesManager.WebAPI.Models.City.CityID">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:CitiesManager.WebAPI.Models.City.CityName">
-            <summary>
-            
-            </summary>
         </member>
     </members>
 </doc>

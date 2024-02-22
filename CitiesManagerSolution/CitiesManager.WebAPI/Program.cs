@@ -15,6 +15,9 @@ builder.Services.AddControllers(options =>
 }).AddXmlSerializerFormatters();
 
 
+// Generates description for all endpoints
+builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddApiVersioning(config =>
 {
     // Reads the version number from the request URL at apiVersion constraint
@@ -38,9 +41,6 @@ builder.Services.AddApiVersioning(config =>
 });
 
 
-// Generates description for all endpoints
-builder.Services.AddEndpointsApiExplorer();
-
 // Generates openAPI specifications
 builder.Services.AddSwaggerGen(options =>
 {
@@ -63,7 +63,9 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddVersionedApiExplorer(options =>
 {
     // VV - each V reperesent the number of digis allowed for API version
-    options.GroupNameFormat = "'v'VV"; // v1
+    // One V is also for the '.' in version number 
+    // (Firts V = 1 (or 2), Second V = . , Third V = 0 (or any other number)) 
+    options.GroupNameFormat = "'v'VVV"; // v1
     
     // substitue version number in the endpoint for swagger.json file
     options.SubstituteApiVersionInUrl = true;

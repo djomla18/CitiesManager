@@ -9,6 +9,47 @@
             
             </summary>
         </member>
+        <member name="T:CitiesManager.WebAPI.Controllers.v1.AccountController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.AccountController.#ctor(Microsoft.AspNetCore.Identity.UserManager{CitiesManager.Core.Identity.ApplicationUser},Microsoft.AspNetCore.Identity.SignInManager{CitiesManager.Core.Identity.ApplicationUser},Microsoft.AspNetCore.Identity.RoleManager{CitiesManager.Core.Identity.ApplicationRole},CitiesManager.Core.ServiceContracts.IJwtService)">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+            <param name="roleManager"></param>
+            <param name="jwtService"></param>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.AccountController.Register(CitiesManager.Core.DTO.RegisterDTO)">
+            <summary>
+            
+            </summary>
+            <param name="registerDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.AccountController.Login(CitiesManager.Core.DTO.LoginDTO)">
+            <summary>
+            
+            </summary>
+            <param name="loginDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.AccountController.Logout">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.AccountController.IsEmailAlreadyRegistered(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
         <member name="T:CitiesManager.WebAPI.Controllers.v1.CitiesController">
             <summary>
             

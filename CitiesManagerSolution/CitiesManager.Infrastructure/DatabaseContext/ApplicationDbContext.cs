@@ -1,4 +1,6 @@
 ﻿using CitiesManager.Core.Entities;
+using CitiesManager.Core.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CitiesManager.Infrastructure.DatabaseContext
@@ -6,7 +8,7 @@ namespace CitiesManager.Infrastructure.DatabaseContext
     /// <summary>
     /// 
     /// </summary>
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, Guid>
     {
         /// <summary>
         /// 
